@@ -203,7 +203,14 @@
 
                         _section1.css({width:winW,height:winH});
                         _portfolio.css({width:winW});
-                        _portfolioCon.css({height:winH-387});
+                        
+                        // if( winW > 1170 ){
+                        //     _portfolioCon.css({height:winH-387});                            
+                        // }
+                        // else{
+                        //     _portfolioCon.css({height:'auto'});
+
+                        // }
 
                     }
                     setTimeout(resizeFn,10);
