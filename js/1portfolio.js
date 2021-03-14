@@ -7,6 +7,7 @@
             that.headerFn();
             that.section1Fn();
             that.section2Fn();
+            that.section3Fn();
 
         },
         headerFn: function(){
@@ -222,6 +223,42 @@
         },
         section2Fn: function(){
 
+        },
+        section3Fn: function(){
+            var circle = $('.circle');
+            var totLen = [];
+            var s = [5,6,7,8,9,10];
+            var slice = [];
+            var tot = [0,0,0,0,0,0];
+            var setId = [];
+            var per = [.80,.80,.40,.50,.30,.30];
+            var x = [];
+            var color = ['#e44d26','#264de4','#f7df1e','#0868ab','#62ccf1','#f57f2a'];
+
+                svgAniFn();
+                function svgAniFn(){
+                    $.each(circle,function(idx,obj){
+                        totLen[idx] = obj.getTotalLength();
+
+                        obj.style.strokeDasharray = totLen[idx];
+                        obj.style.strokeDashoffset = totLen[idx];
+
+                        slice[idx] = (totLen[idx]/s[idx])/100;
+
+                        setId[idx] = setInterval(function(){
+                            tot[idx] += slice[idx];
+
+                            if( tot[idx] > (totLen[idx]*per[idx]) )
+                                clearInterval(setId[idx]);
+
+                            $(obj).css({strokeDashoffset:totLen[idx]-tot[idx]});
+                            x[idx] = Math.round((tot[idx]/totLen[idx])*100) + '%';
+                            $('.name').eq(idx).find('h3').text(x[idx]).css({color:color[idx]});
+                            $('.circle').eq(idx).css({stroke:color[idx]});
+
+                        },1000/100);
+                    });
+                }
         }
 
     };

@@ -28,6 +28,9 @@
 @media all and (max-width:1000px){
     #main #section1 .wrap .gap .container .content .section1-bg .main-title .title-wrap div span {font-size:70px;}
     #main #section1 .wrap .gap .container .content .section1-bg .main-title .title-wrap .title3 span {font-size:22px;}
+
+    #main #section3 .wrap .gap .content ul li {width:33.333%;}
+    #main #section3 .wrap .gap .content ul li .gap2 .box-wrap .name h3 {font-size:calc(2.1529vw*2);}
 }
 
 @media all and (max-width:905px){
@@ -47,6 +50,8 @@
     #main #section1 .wrap .gap .container .content .section1-bg .main-title .title-wrap div span {font-size:60px;}
     #main #section1 .wrap .gap .container .content .section1-bg .main-title .title-wrap .title3 span {font-size:20px;}
 
+    #main #section3 .wrap .gap .content ul li {width:50%;}
+    #main #section3 .wrap .gap .content ul li .gap2 .box-wrap .name h3 {font-size:calc(2.1529vw*3);}
 }
 
 @media all and (max-width:650px){
@@ -74,21 +79,26 @@
     
     #main .title h5 {font-size:13px;}
     #main #section1 .wrap .gap .container .content .section1-bg .main-title {width:100%;left:0;text-align:center;}
+
+    #main #section3 .wrap .gap .content ul li {width:100%;}
+    #main #section3 .wrap .gap .content ul li .gap2 .box-wrap .name h3 {font-size:calc(2.1529vw*6);}
+    #main #section3 .wrap .gap .content ul li .gap2 .box-wrap .name span img {width:100%;max-width:80px;}
+    #main #section3 .wrap .gap .content ul li:nth-child(2) .gap2 .box-wrap .name img {width:100%;max-width:63px;}
 }
 
 @media all and (max-width:480px){
-    #main #section2 .wrap .gap .container .left .txt-wrap .txt p br {display:block;}
+    #main #section4 .wrap .gap .container .left .txt-wrap .txt p br {display:block;}
 }
 
 @media all and (max-width:450px){
-    #main #section3 .wrap .gap .container .left .txt-wrap .txt p br {display:block;}
+    #main #section5 .wrap .gap .container .left .txt-wrap .txt p br {display:block;}
 }
 
 @media all and (max-width:400px){
     #main #section1 .wrap .gap .container .content .section1-bg .main-title .title-wrap div span {font-size:50px;}
     #main #section1 .wrap .gap .container .content .section1-bg .main-title .title-wrap .title3 span {font-size:16px;}
     
-    #main #section6 .wrap .gap .container .left .txt-wrap .txt p br {display:block;}
+    #main #section8 .wrap .gap .container .left .txt-wrap .txt p br {display:block;}
 
     #footer .content .content-gap .right-wrap .row1 div {border-bottom:0;width:180px;}
 
