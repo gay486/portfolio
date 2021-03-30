@@ -9,8 +9,8 @@
     <meta name="title" content="Ahyoung's Portfolio">
     <meta name="publisher" content="Choi ahyoung">
     <meta name="author-date" content="2021-01-05">
-    <meta name="author" content="Jason Travel Service">
-    <meta name="copyright" content="Jason Travel Service">
+    <meta name="author" content="Choi ahyoung">
+    <meta name="copyright" content="Choi ahyoung">
     <meta name="keywords" content="Ahyoung's Portfolio, Web publisher, Front-End, Choi ahyoung Portfolio, Web publisher Choi ahyoung, 웹퍼블리셔, 프론트엔드, 포트폴리오, 신입 웹퍼블리셔, 최아영, 최아영의 포트폴리오, 웹퍼블리셔 최아영">
     <meta name="description" content="신입 웹퍼블리셔 최아영의 포트폴리오입니다.">
     <meta name="robots" content="index,follow">
@@ -23,8 +23,6 @@
     <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
-
 
 
     <link rel="stylesheet" type="text/css" href="./css/fonts.css">
@@ -56,12 +54,33 @@
 </head>
 <body id="intro">
 <ul id="skip">
-    <li><a href="#header" title="메뉴바로가기">메뉴바로가기</a></li>
-    <li><a href="#main" title="메인바로가기">메인바로가기</a></li>
-    <li><a href="#footer" title="하단바로가기">하단바로가기</a></li>
+    <li><a href="#header" class="smoothBtn" title="HOME">Go to HOME</a></li>
+    <li><a href="#section2" class="smoothBtn" title="ABOUT">Go to ABOUT</a></li>
+    <li><a href="#section3" class="smoothBtn" title="ABOUT">Go to SKILLS</a></li>
+    <li><a href="#section4" class="smoothBtn" title="ABOUT">Go to PORTFOLIO</a></li>
+    <li><a href="#footer" class="smoothBtn" title="CONTACT">Go to CONTACT</a></li>
 </ul>
 <div id="wrap">
     <header id="header">
+        <div class="nav">
+            <div class="is-closed">
+                <a href="#" class="menu-bar">
+                    <i class="line line1"></i>
+                    <i class="line line2"></i>
+                    <i class="line line3"></i>
+                </a>
+            </div>
+        </div>
+        <nav id='nav'>
+            <ul>
+                <li><a href="#intro" class="main-btn smoothBtn">HOME</a></li>
+                <li><a href="#section2" class="main-btn smoothBtn">ABOUT</a></li>
+                <li><a href="#section3" class="main-btn smoothBtn">SKILLS</a></li>
+                <li><a href="#section4" class="main-btn smoothBtn">PORTFOLIO</a></li>
+                <li><a href="#footer" class="main-btn smoothBtn">CONTACT</a></li>
+            </ul>
+        </nav>
+
         <div class="wrap">
             <div class="header-gap">
                 <div class="container">
@@ -75,35 +94,11 @@
                             </h1>
                             <h2>CHOI AH YOUNG</h2>
                         </li>
-                        <li>
-                            <a href="#" class="menu-bar">
-                                <span class="line-wrap">
-                                    <i class="line line1"></i>
-                                    <i class="line line2"></i>
-                                    <i class="line line3"></i>
-                                </span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <nav id='nav'>
-        <div class="wrap">
-            <div class="gap">
-                <div class="container">
-                    <ul>
-                        <li><a href="#intro" class="main-btn">HOME</a></li>
-                        <li><a href="#section2" class="main-btn">ABOUT</a></li>
-                        <li><a href="#section3" class="main-btn">SKILLS</a></li>
-                        <li><a href="#section4" class="main-btn">PORTFOLIO</a></li>
-                        <li><a href="#footer" class="main-btn">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
     <main id="main">
         <section id="section1" class="wheelE">
             <div class="wrap">
@@ -125,12 +120,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <span class="smooth-wrap"><a href="#section2" class="smooth-btn"><i class="fas fa-angle-double-down"></i></a></span>
+                            <span class="smooth-wrap"><a href="#section2" class="smoothBtn"><i class="fas fa-angle-double-down"></i></a></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- about -->
         <section id="section2" class="sec2 wheelE">
             <div class="wrap">
                 <div class="gap">
@@ -141,11 +137,12 @@
                         <div class="content clearfix">
                             <div class="left">
                                 <div class="content-gap">
-                                    <div class="img-wrap"><img src="./img/2portfolio.jpg" alt=""></div>
+                                    <div class="img-wrap"><!-- <img src="./img/portfolio.jpg" alt="my image"> --></div>
                                     <ul class="pro-wrap">
                                         <li><div><i class="fas fa-birthday-cake"></i><h6>1984.08.26</h6></div></li>
                                         <li><div><i class="fas fa-phone-alt"></i><h6>+82. 10. 4583. 8408</h6></div></li>
                                         <li><div><i class="fas fa-envelope"></i><h6>nizi_aki@naver.com</h6></div></li>
+                                        <li><div><i class="fab fa-github"></i><h6>gay486</h6></div></li>
                                     </ul>
                                 </div>
                             </div>
@@ -198,6 +195,7 @@
                 </div>
             </div>
         </section>
+        <!-- about - logo design -->
         <section id="section2-1" class="sec2 wheelE">
             <div class="wrap">
                 <div class="gap">
@@ -207,26 +205,90 @@
                         </div>
                         <div class="content clearfix">
                             <div class="left">
-                                <h4>로고 / LOGO</h4>
-                                <div class="img-wrap"><img src="./img/logo.png" alt="logo"></div>
+                                <div class="content-gap">
+                                    <h4>로고 / LOGO</h4>
+                                    <div class="img-wrap">
+                                        <img class="img1" src="./img/logo.png" alt="logo">
+                                        <img class="img2" src="./img/logo_gr.png" alt="logo_gr">
+                                    </div>
+                                </div>
                             </div>
                             <div class="right">
-                                <div class="up">
-                                    <h4>컨셉 / CONCEPT</h4>
-                                    <h5>A + 아 + 영(0)</h5>
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                        Assumenda optio perferendis incidunt possimus! Harum neque quia recusandae,
-                                        optio officiis, architecto illum repudiandae reiciendis libero cum similique.
-                                        Eius odit provident dignissimos!
-                                    </p>
-                                </div>
-                                <div class="down">
-                                    <h4>컬러 / COLOR</h4>
-                                    <div class="color-wrap">
-                                        <i class="color1"></i><span>RGB&nbsp; 245 223 &nbsp;77 <br> HEX/HTML F5DF4D</span>
-                                        <i class="color2"></i><span>RGB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 106 107 <br> HEX/HTML 006A6B</span>
-                                        <i class="color3"></i><span>RGB&nbsp;&nbsp; 84 202 202 <br> HEX/HTML 54CACA</span>
+                                <div class="content-gap">
+                                    <div class="up">
+                                        <h4>컨셉 / CONCEPT</h4>
+                                        <ul class="edu-wrap">
+                                            <li class="up-img-wrap">
+                                                <span class="up-img1"><img src="./img/logo1.png" alt="A"></span><i class="fas fa-plus"></i>
+                                                <span class="up-img2"><img src="./img/logo2.png" alt="아"></span><i class="fas fa-plus"></i>
+                                                <span class="up-img3"><img src="./img/logo3.png" alt="영"></span>
+                                            </li>
+                                            <li class="up-txt-wrap">
+                                                <span>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Consequatur molestias pariatur modi cupiditate.
+                                                    Quibusdam molestiae reiciendis eligendi quisquam debitis odit adipisci deserunt nesciunt ea.
+                                                    Dolorem, consequuntur ullam. Explicabo, corporis non!
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="down">
+                                        <h4>컬러 / COLOR</h4>
+                                        <div class="down-wrap">
+                                            <div class="main-color">
+                                                <h5>Main Color</h5>
+                                                <ul class="color-wrap">
+                                                    <li>
+                                                        <i class="color1"></i>
+                                                        <div class="color-name">
+                                                            <span>R:245 G:223 B:77</span>
+                                                            <span>HEX&nbsp;&nbsp;&nbsp;F5DF4D</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <i class="color2"></i>
+                                                        <div class="color-name">
+                                                            <span>R:147 G:149 B:151</span>
+                                                            <span>HEX&nbsp;&nbsp;&nbsp;939597</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <i class="color3"></i>
+                                                        <div class="color-name">
+                                                            <span>R:101 G:103 B:105</span>
+                                                            <span>HEX&nbsp;&nbsp;&nbsp;656769</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="sub-color">
+                                                <h5>Sub Color</h5>
+                                                <ul class="color-wrap">
+                                                    <li>
+                                                        <i class="color4"></i>
+                                                        <div class="color-name">
+                                                            <span>R:245 G:223 B:77</span>
+                                                            <span>HEX&nbsp;&nbsp;&nbsp;F5DF4D</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <i class="color5"></i>
+                                                        <div class="color-name">
+                                                            <span>R:&nbsp;&nbsp;0 G:106 B:107</span>
+                                                            <span>HEX&nbsp;&nbsp;&nbsp;006A6B</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <i class="color6"></i>
+                                                        <div class="color-name">
+                                                            <span>R:84 G:202 B:202</span>
+                                                            <span>HEX&nbsp;&nbsp;&nbsp;54CACA</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -235,6 +297,7 @@
                 </div>
             </div>
         </section>
+        <!-- skills -->
         <section id="section3" class="wheelE">
             <div class="wrap">
                 <div class="gap">
@@ -247,10 +310,10 @@
                                 <div class="gap2">
                                     <div class="box-wrap">
                                         <svg class="bg" viewBox="0 0 400 400">
-                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#e44d26" stroke-width="20">
+                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#e44d26" stroke-width="20"></circle>
                                         </svg>
                                         <svg class="front" viewBox="0 0 400 400">
-                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20">
+                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20"></circle>
                                         </svg>
                                         <div class="name">
                                             <span><img src="./img/html5.png" alt="html5"></span>
@@ -263,10 +326,10 @@
                                 <div class="gap2">
                                     <div class="box-wrap">
                                         <svg class="bg" viewBox="0 0 400 400">
-                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#264de4" stroke-width="20">
+                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#264de4" stroke-width="20"></circle>
                                         </svg>
                                         <svg class="front" viewBox="0 0 400 400">
-                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20">
+                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20"></circle>
                                         </svg>
                                         <div class="name">
                                             <span><img src="./img/css3.png" alt="css3"></span>
@@ -279,10 +342,10 @@
                                 <div class="gap2">
                                     <div class="box-wrap">
                                         <svg class="bg" viewBox="0 0 400 400">
-                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#f7df1e" stroke-width="20">
+                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#f7df1e" stroke-width="20"></circle>
                                         </svg>
                                         <svg class="front" viewBox="0 0 400 400">
-                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20">
+                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20"></circle>
                                         </svg>
                                         <div class="name">
                                             <span><img src="./img/JavaScript.png" alt="JavaScript"></span>
@@ -295,10 +358,10 @@
                                 <div class="gap2">
                                     <div class="box-wrap">
                                         <svg class="bg" viewBox="0 0 400 400">
-                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#0868ab" stroke-width="20">
+                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#0868ab" stroke-width="20"></circle>
                                         </svg>
                                         <svg class="front" viewBox="0 0 400 400">
-                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20">
+                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20"></circle>
                                         </svg>
                                         <div class="name">
                                             <span><img src="./img/jQuery.png" alt="jQuery"></span>
@@ -311,10 +374,10 @@
                                 <div class="gap2">
                                     <div class="box-wrap">
                                         <svg class="bg" viewBox="0 0 400 400">
-                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#62ccf1" stroke-width="20">
+                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#62ccf1" stroke-width="20"></circle>
                                         </svg>
                                         <svg class="front" viewBox="0 0 400 400">
-                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20">
+                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20"></circle>
                                         </svg>
                                         <div class="name">
                                             <span><img src="./img/photoshop.png" alt="photoshop"></span>
@@ -327,10 +390,10 @@
                                 <div class="gap2">
                                     <div class="box-wrap">
                                         <svg class="bg" viewBox="0 0 400 400">
-                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#f57f2a" stroke-width="20">
+                                            <circle cx="200" cy="200" r="190" fill="none" stroke="#f57f2a" stroke-width="20"></circle>
                                         </svg>
                                         <svg class="front" viewBox="0 0 400 400">
-                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20">
+                                            <circle class="circle" cx="200" cy="200" r="190" fill="none" stroke-width="20"></circle>
                                         </svg>
                                         <div class="name">
                                             <span><img src="./img/illustration.png" alt="illustration"></span>
@@ -344,6 +407,7 @@
                 </div>
             </div>
         </section>
+        <!-- portfolio -->
         <section id="section4" class="portfolio wheelE">
             <div class="wrap">
                 <div class="gap">
@@ -359,7 +423,7 @@
                                 <div class="txt">
                                     <h2>VICCARBE</h2>
                                     <p>스페인의 지중해 도시 발렌시아에 위치한 <br><br> 현대적인 디자인 가구 브랜드 홈페이지</p>
-                                    <div class="btn-wrap"><a href="#"><i>ABOUT WORK</i></a></div>
+                                    <div class="btn-wrap"><a href="./viccarbe.html"><i>ABOUT WORK</i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -389,7 +453,7 @@
                                 <div class="txt">
                                     <h2>JASON <br> TRAVEL SERVICE</h2>
                                     <p>단 하나뿐인 나만의 럭셔리 여행, <br><br> "다른 여행"을 추구하는 국내 여행사 홈페이지</p>
-                                    <div class="btn-wrap"><a href="#"><i>ABOUT WORK</i></a></div>
+                                    <div class="btn-wrap"><a href="./jason.html"><i>ABOUT WORK</i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +483,7 @@
                                 <div class="txt">
                                     <h2>H-CODE</h2>
                                     <p>해외 웹 에이전시 홈페이지</p>
-                                    <div class="btn-wrap"><a href="#"><i>ABOUT WORK</i></a></div>
+                                    <div class="btn-wrap"><a href="./hcode.html"><i>ABOUT WORK</i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -449,7 +513,7 @@
                                 <div class="txt">
                                     <h2>BRANDO <br> RESTAURANT</h2>
                                     <p>해외 웹 에이전시 홈페이지</p>
-                                    <div class="btn-wrap"><a href="#"><i>ABOUT WORK</i></a></div>
+                                    <div class="btn-wrap"><a href="./brando.html"><i>ABOUT WORK</i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -479,7 +543,7 @@
                                 <div class="txt">
                                     <h2>VIVIENNE <br> WESTWOOD</h2>
                                     <p>영국의 패션 브랜드 비비안웨스트우드 <br><br> 공식 온라인 스토어 홈페이지</p>
-                                    <div class="btn-wrap"><a href="#"><i>ABOUT WORK</i></a></div>
+                                    <div class="btn-wrap"><a href="./vivienne.html"><i>ABOUT WORK</i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -509,7 +573,7 @@
                                 <div class="txt">
                                     <h2>STARBUCKS</h2>
                                     <p>커피 전문 브랜드 스타벅스 코리아 홈페이지</p>
-                                    <div class="btn-wrap"><a href="#"><i>ABOUT WORK</i></a></div>
+                                    <div class="btn-wrap"><a href="./starbucks.html"><i>ABOUT WORK</i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -525,6 +589,7 @@
             </div>
         </section>
     </main>
+    <!-- footer - contact -->
     <footer id="footer" class="wheelE"> 
         <div class="wrap"> 
             <div class="gap">
@@ -532,7 +597,7 @@
                     <div class="content">
                         <div class="content-gap clearfix">
                             <div class="left-wrap"> 
-                                <h2><img src="./img/logo_gr.png" alt="logo"></h2>
+                                <h2><img src="./img/logo_gr.png" alt="logo-gr"></h2>
                             </div>
                             <div class="right-wrap">
                                 <div class="row1">
@@ -555,6 +620,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Go Top -->
+    <div class="goTop">
+        <a href="#intro" class="goTop-btn" title="goTop"><i class="fas fa-long-arrow-alt-up"></i></a>
+    </div>
+
 </div>
 
 <!-- <script src="./js/portfolio.js"></script> -->
